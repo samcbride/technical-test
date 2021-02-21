@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccountNumberForm renders correctly 1`] = `
+<DocumentFragment>
+  <form>
+    <div
+      class="account-number"
+    >
+      <input
+        class="account-number-area"
+        placeholder="Enter your account number"
+        type="text"
+      />
+      <button
+        class="submit-button"
+        type="submit"
+      >
+        submit
+      </button>
+    </div>
+  </form>
+</DocumentFragment>
+`;

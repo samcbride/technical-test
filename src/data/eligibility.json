@@ -1,0 +1,34 @@
+{
+  "eligibility": [
+    {
+      "accountNumber": 1234,
+      "channelSubscriptions": {
+        "sports": "Sports",
+        "kids": "Kids",
+        "music": "Music",
+        "news": "News",
+        "movies": "Movies"
+      }
+    },
+    {
+      "accountNumber": 5678,
+      "channelSubscriptions": {
+        "sports": "",
+        "kids": "Kids",
+        "music": "Music",
+        "news": "News",
+        "movies": ""
+      }
+    },
+    {
+      "accountNumber": 9101,
+      "channelSubscriptions": {
+        "sports": "",
+        "kids": "",
+        "music": "",
+        "news": "News",
+        "movies": "Movies"
+      }
+    }
+  ]
+}

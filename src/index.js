@@ -1,12 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
+import App from "./components/App";
 import reportWebVitals from "./reportWebVitals";
+import { eligibility } from "./data/eligibility.json";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App eligibility={eligibility} />
   </React.StrictMode>,
   document.getElementById("root")
 );
