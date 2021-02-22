@@ -8,14 +8,14 @@ exports[`AccountNumberForm renders correctly 1`] = `
     >
       <input
         class="account-number-area"
-        placeholder="Enter your account number"
+        placeholder="Enter account number"
         type="text"
       />
       <button
         class="submit-button"
         type="submit"
       >
-        submit
+        Submit
       </button>
     </div>
   </form>

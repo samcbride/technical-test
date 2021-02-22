@@ -1,15 +1,14 @@
 import React from "react";
 import "../styles/AccountNumberForm.css";
 
-const AccountNumber = ({ accountNumber }) => {
-  console.log(accountNumber);
+const AccountNumber = () => {
   return (
     <form>
       <div className="account-number">
         <input
           className="account-number-area"
           type="text"
-          placeholder="Enter your account number"
+          placeholder="Enter account number"
         />
         <button className="submit-button" type="submit">
           Submit
