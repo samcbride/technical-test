@@ -28,6 +28,7 @@ describe("IndividualAccounts", () => {
   it("renders correct values for props", () => {
     const { getByText } = render(
       <IndividualAccounts
+        accountNumber={validProps.accountNumber}
         sports={validProps.sports}
         kids={validProps.kids}
         music={validProps.music}
@@ -35,6 +36,7 @@ describe("IndividualAccounts", () => {
         movies={validProps.movies}
       />
     );
+    expect(getByText("1234")).toHaveClass("individual-channels__accountNumber");
     expect(getByText("Sports")).toHaveClass("individual-channels__sports");
     expect(getByText("Kids")).toHaveClass("individual-channels__kids");
     expect(getByText("Music")).toHaveClass("individual-channels__music");

@@ -6,19 +6,23 @@ describe("ChannelSubscriptions", () => {
   const validProps = [
     {
       accountNumber: 1234,
-      sports: "Sports",
-      kids: "Kids",
-      music: "Music",
-      news: "News",
-      movies: "Movies",
+      channelSubscriptions: {
+        sports: "Sports",
+        kids: "Kids",
+        music: "Music",
+        news: "News",
+        movies: "Movies",
+      },
     },
     {
-      accountNumber: 1234,
-      sports: "Sports",
-      kids: "Kids",
-      music: "Music",
-      news: "News",
-      movies: "Movies",
+      accountNumber: 5678,
+      channelSubscriptions: {
+        sports: "Sports",
+        kids: "Kids",
+        music: "Music",
+        news: "News",
+        movies: "Movies",
+      },
     },
   ];
   it("renders correctly", () => {

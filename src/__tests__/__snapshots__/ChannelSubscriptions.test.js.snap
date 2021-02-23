@@ -47,7 +47,7 @@ exports[`ChannelSubscriptions renders correctly 1`] = `
       <div
         class="individual-channels__accountNumber"
       >
-        1234
+        5678
       </div>
       <div
         class="individual-channels__sports"
