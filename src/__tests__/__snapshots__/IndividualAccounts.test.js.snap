@@ -7,6 +7,11 @@ exports[`IndividualAccounts renders correctly 1`] = `
     data-testid="individual-channels"
   >
     <div
+      class="individual-channels__accountNumber"
+    >
+      1234
+    </div>
+    <div
       class="individual-channels__sports"
     >
       Sports

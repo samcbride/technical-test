@@ -5,6 +5,7 @@ import { render } from "@testing-library/react";
 describe("ChannelSubscriptions", () => {
   const validProps = [
     {
+      accountNumber: 1234,
       sports: "Sports",
       kids: "Kids",
       music: "Music",
@@ -12,11 +13,12 @@ describe("ChannelSubscriptions", () => {
       movies: "Movies",
     },
     {
-      sports: "",
+      accountNumber: 1234,
+      sports: "Sports",
       kids: "Kids",
-      music: "",
+      music: "Music",
       news: "News",
-      movies: "",
+      movies: "Movies",
     },
   ];
   it("renders correctly", () => {

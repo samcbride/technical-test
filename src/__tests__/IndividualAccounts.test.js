@@ -4,6 +4,7 @@ import { render } from "@testing-library/react";
 
 describe("IndividualAccounts", () => {
   const validProps = {
+    accountNumber: 1234,
     sports: "Sports",
     kids: "Kids",
     music: "Music",
@@ -13,6 +14,7 @@ describe("IndividualAccounts", () => {
   it("renders correctly", () => {
     const { asFragment } = render(
       <IndividualAccounts
+        accountNumber={validProps.accountNumber}
         sports={validProps.sports}
         kids={validProps.kids}
         music={validProps.music}

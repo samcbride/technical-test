@@ -6,6 +6,8 @@ const ChannelSubscriptions = ({ eligibility }) => (
   <div className="channel-subscriptions">
     {eligibility.map((eligible) => (
       <IndividualAccounts
+        key={eligible.accountNumber}
+        accountNumber={eligible.accountNumber}
         sports={eligible.channelSubscriptions.sports}
         kids={eligible.channelSubscriptions.kids}
         music={eligible.channelSubscriptions.music}
@@ -21,12 +23,13 @@ export default ChannelSubscriptions;
 ChannelSubscriptions.propTypes = {
   eligibility: PropTypes.arrayOf(
     PropTypes.shape({
+      accountNumber: PropTypes.number.isRequired,
       channelSubscriptions: PropTypes.shape({
         sports: PropTypes.string,
         kids: PropTypes.string,
         music: PropTypes.string,
         news: PropTypes.string,
-        movies: PropTypes.bool,
+        movies: PropTypes.string,
       }).isOptional,
     })
   ).isRequired,

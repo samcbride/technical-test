@@ -10,11 +10,7 @@ const AccountNumber = () => {
           type="text"
           placeholder="Enter account number"
         />
-        <button
-          className="submit-button"
-          type="submit"
-          onClick={() => console.log("Hello!")}
-        >
+        <button className="submit-button" type="submit">
           Submit
         </button>
       </div>
