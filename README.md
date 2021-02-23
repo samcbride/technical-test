@@ -3,6 +3,12 @@
 I decided to write the technical test in React as I have recently been working with it through my coding bootcamp and thought it would lend well to this task. A recent project we worked on (a weather-app) helped me shape this tech test a great deal, as I felt that the structure of that project was quite similar to what I wanted to accomplish here.
 <br>
 
+### To get started:
+
+Clone the repo down and run `npm start` to fire up the React app. To run the tests run `npm test`.
+
+To fire up the mock-api and React at the same time I opened two separate terminal windows and ran `npm start` for React and `npm run start` for the Mock-API. Please note the Mock-API will not currently work as I separated the code into a commented-out file (_mock-api.js_) outside of the App.js file to tidy up the App.js file.
+
 ## Overview
 
 The files are separated into different sections for clarity and organisation (_components_, _tests_, _styles_, _data_).
@@ -20,9 +26,7 @@ I broke up the Rewards Service into the following sections:
 
 I initially mocked the data in the **eligibility.json** file in the **/src/data** section, which allowed me to pass data into the App and display it. However, I wasn't sure how to utilize this data with GET or fetch requests as I've always used a live API for that for the React projects I have completed.
 
-I then tried to create a Mock-API (see mock-api section), which worked when I fired up Postman, but again, struggled to pull that data in. I believe I need a function that connects to the AccountNumberForm.js file and that activates once the submit button is clicked. I played around with this functionality for a while trialing some steps we took in the weather-app, but unfortunately was unable to find a solution. Perhaps an if/else statement would also be needed (if the data matches, return the rewards the account is eligible for).
-
-I found this to be quite a challenging assignment and certainly was lesson for figuring out more about how things are passed to each other in React (and also how to structure mock data).
+I then tried to create a Mock-API (see **mock-api** section), which worked when I fired up Postman, but again, struggled to pull that data in. I believe I need a function that connects to the AccountNumberForm.js file and that activates once the submit button is clicked. I played around with this functionality for a while trialing some steps we took in the weather-app, but unfortunately was unable to find a solution. Perhaps an if/else statement would also be needed (if the data matches, return the rewards the account is eligible for).
 
 ## Testing
 
@@ -34,9 +38,7 @@ I found this to be quite a challenging assignment and certainly was lesson for f
 
 - Work more on the testing. I am wondering if there are there better things I could test for.
 - Add more styling - I focused more on trying to get the various components to work and because of that styling took a backseat.
-- Thank you for the opportunity of completing this tech test. I really wish I could have completed more and figured out the functionality better.
-
-<br>
+  <br>
 
 ## Acknowledgments
 
