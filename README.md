@@ -1,6 +1,6 @@
 # Technical Test
 
-I decided to write the technical test in React as I have recently been working with it through my coding bootcamp and thought it would lend well to this task. A recent project we worked on (a weather-app) helped me shape this tech test a great deal, as I felt that the structure of that project was quite similar to what I wanted to accomplish here.
+I decided to write the technical test in React as I have recently been working with it through my coding bootcamp and thought it would lend well to this task. A recent project we worked on (a weather-app) helped me shape this tech test, as I felt that the structure of that project was quite similar to what I wanted to accomplish here.
 <br>
 
 ### To get started:
@@ -19,14 +19,14 @@ I broke up the Rewards Service into the following sections:
 
   - **AccountNumberForm.js** is fed into App.js - this form contains a button that when pressed should display the rewards someone is eligible for (based on the account number input).
     - This would eventually be the state (when live data is passed in as it is changeable data based on user input).
-  - **ChannelPortfolio.js** is fed into App.js. This is a list of all the channels. I was a little bit confused about the portfolio section - if it was just meant to be a list of all the channels or if it was a list of people to select which channels they had. Based on the fact that the account number was the thing that was being sent to the Eligibility Service (and presumably the account number would be associated with the channels the customer had) I interpreted the portfolio section to be a list of the channels.
-  - **ChannelSubscriptions.js** - this contains the **IndividualAccount.js** information. I wasn't sure if this was the best way to structure it, but decided to go with this route. I was envisioning that this section of the page would be initially blank and would then pull in the Individual Channels, and associated rewards, based on the input of the account number (matching an account number in the data) and the submit button being clicked. In my eligibility.json file some of the values are empty strings, which I hoped would evaluate to false and therefore not render, though this didn't quite turn out how I was intending (hence the empty coloured boxes that are rendering on the main page). I would like to explore this further if I had more time.
+  - **ChannelPortfolio.js** is fed into App.js. This is a list of all the channels. I was a little bit confused about the portfolio section - if it was just meant to be a list of all the channels or if it was a list for people to select which channels they had. Based on the fact that the account number was what was being sent to the Eligibility Service (and presumably the account number would be associated with the channels the customer had) I interpreted the portfolio section to be a list of the channels.
+  - **ChannelSubscriptions.js** - this contains the **IndividualAccount.js** information. I wasn't sure if this was the best way to structure it, but decided to go with this route. I was envisioning that this section of the page would be initially blank and would then pull in the Individual Channels, and associated rewards, based on the input of the account number (matching an account number in the data) and the submit button being clicked. In my _eligibility.json_ file some of the values are empty strings, which I hoped would evaluate to false and therefore not render, though this didn't quite turn out how I was intending (hence the empty coloured boxes that are rendering on the main page). I would like to explore this further if I had more time. I was thinking that an if/else statement could be useful here - if the account number data matches the stored data, return the associated channels and their rewards.
 
     - **IndividualAccounts.js** file contains the channel information associated with each account.
 
-I initially mocked the data in the **eligibility.json** file in the **/src/data** section, which allowed me to pass data into the App and display it. However, I wasn't sure how to utilize this data with GET or fetch requests as I've always used a live API for that for the React projects I have completed.
+I initially mocked the **Eligibility Service** data in the **eligibility.json** file in the **/src/data** section, which allowed me to pass data into the App and display it. However, I wasn't sure how to utilize this data with GET or fetch requests as I've always used a live API for that for the React projects I have completed.
 
-I then tried to create a Mock-API (see **mock-api** section), which worked when I fired up Postman, but again, struggled to pull that data in. I believe I need a function that connects to the AccountNumberForm.js file and that activates once the submit button is clicked. I played around with this functionality for a while trialing some steps we took in the weather-app, but unfortunately was unable to find a solution. Perhaps an if/else statement would also be needed (if the data matches, return the rewards the account is eligible for).
+I then tried to create a Mock-API (see **mock-api** section), which worked when I fired up Postman, but again, struggled to pull that data in. I believe I need a function that connects to the **AccountNumberForm.js** file and that activates once the submit button is clicked. I played around with this functionality for a while trialing some steps I took in the weather-app, but unfortunately was unable to find a solution. Perhaps an if/else statement would also be needed (if the data matches, return the rewards the account is eligible for). I then decided to return to the mocked data in the **eligibility.json** file.
 
 ## Testing
 
@@ -38,6 +38,7 @@ I then tried to create a Mock-API (see **mock-api** section), which worked when 
 
 - Work more on the testing. I am wondering if there are there better things I could test for.
 - Add more styling - I focused more on trying to get the various components to work and because of that styling took a backseat.
+- I would like to experiment more with the mock-api. It was quite fun setting it up and although I struggled to sort out the functionality and how to utilize it, I think with some help I could get it working how I envisioned.
   <br>
 
 ## Acknowledgments
