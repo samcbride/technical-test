@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IndividualAccounts renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="individual-channels"
+    data-testid="individual-channels"
+  >
+    <div
+      class="individual-channels__sports"
+    >
+      Sports
+    </div>
+    <div
+      class="individual-channels__kids"
+    >
+      Kids
+    </div>
+    <div
+      class="individual-channels__music"
+    >
+      Music
+    </div>
+    <div
+      class="individual-channels__news"
+    >
+      News
+    </div>
+    <div
+      class="individual-channels__movies"
+    >
+      Movies
+    </div>
+  </div>
+</DocumentFragment>
+`;

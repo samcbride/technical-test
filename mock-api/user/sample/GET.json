@@ -1,0 +1,14 @@
+{
+  "eligibility": [
+    {
+      "accountNumber": 1234,
+      "channelSubscriptions": {
+        "sports": "Sports",
+        "kids": "Kids",
+        "music": "Music",
+        "news": "News",
+        "movies": "Movies"
+      }
+    }
+  ]
+}

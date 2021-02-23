@@ -1,12 +1,33 @@
 # Technical Test
 
-I decided to write the technical test in React as I have recently been working with it through my bootcamp and thought it would lend well to this task.
+I decided to write the technical test in React as I have recently been working with it through my bootcamp and thought it would lend well to this task. A recent project we worked on (a weather-app) influenced this tech test a great deal, as I felt that the structure of that project was quite similar to what I wanted to accomplish with this task. There are quite a few similarities between the two, but ultimately that project helped me decide how I wanted to lay out this test.
+<br>
 
-I decided to structure this task in the following way:
+## Overview
 
-- Main page (App.js)
-  - Account number / submit button - this would ideally be statefull at some point, so different values could be put in and data returned based on those values
-    - Eligible rewards (brought up when submit button clicked)
-  - Channel List - this would contain props of all the listed channels
+I broke up the Rewards Service into the following sections:
+
+- **App.js** is the overall structure of the page - it holds everything within it
+
+  - **AccountNumberForm.js** is fed into App.js - this form contains a button that when pressed should display the rewards someone is eligible for (based on the account number input)
+    - This would eventually be the state (when live data is passed in as it is changeable data based on user input)
+  - **ChannelPortfolio.js** is fed into App.js. This is a list of all the channels. I was a little bit confused about the portfolio section - if it was just meant to be a list of all the channels or if it was a list of people to select which channels they had. Based on the fact that the account number was the thing that was being sent to the Eligibility Service (and presumably the account number would be associated with the channels the customer had) I interpreted the portfolio section to be a list of the channels.
+  - **ChannelSubscriptions.js** - this contains the **IndividualChannels.js** information. I wasn't sure if this was the best way to structure it, but decided to go with this route. I was envisioning that this section of the page would be the Channel Subscriptions (initially blank), which would then pull in the Individual Channels, and associated rewards, based on the account number (matching an account number in the data) and the submit button being clicked
+
+    - **IndividualChannels.js** file contains the channel information associated with each account
+
+    - Prop is the channelSubscriptions data from the eligibility.json file - how to get this prop though is a bit confusing. It needs to be the eligibility prop because that contains all the information, but you need to target specifically the channelSubscriptions section
+
+I initially mocked the data in the **eligibility.json** file in the **/src/data** section, which allowed me to pass data into the App and display it. However, I wasn't sure how to utilize this data with GET or fetch requests as I've always used a live API for that for the React projects I have completed.
+
+I then tried to create a Mock-API (see mock-api section), which worked when I fired up Postman, but again, struggled to pull that data in. I believe I need a function that connects to the AccountNumberForm.js file and that activates once the submit button is clicked. I played around with this functionality for a while trialing some steps we took in the weather-app, but unfortunately was unable to find a solution.
 
 I found this to be quite a challenging assignment and certainly was lesson for figuring out props and state and how things are passed to each other in React.
+
+## If I had more time
+
+<br>
+
+## Acknowledgments
+
+Thank you to the Manchester Codes Platform - the information laid out for the weather-app project greatly helped me structure and write the code for this tech test. Thank you also to this blog (https://blog.harveydelaney.com/setting-up-a-mock-api-for-your-front-end-react-project/) for helping me set up a mock-api. Finally, thank you very much to everyone at Sky who I've had the pleasure to meet/interact with and thank you for taking the time to review this test.
